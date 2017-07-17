@@ -8,13 +8,10 @@ When would you want to use a remote repository rather than keeping all your work
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-What is the difference between Git Pull Vs GitHub pull request ?
+What is the difference between git Pull Vs GitHub pull request ?
 Ans >> If you use git pull, you pull the changes from the remote repository into yours.
-If you send a pull request(from GitHub) to another repository, you ask their maintainers to pull your 
-changes(from GitHub) into theirs (you more or less ask them to issue  a git pull to your GitHub 
-repository).(As a side note, if you're new to Git, I'd suggest using git fetch and then git merge
-instead of git pull. git pull is effectively git fetch followed by git merge, but doing them 
-separately gives you better control over potential conflicts.)
+GitHub Pull request works only between two GitHub repositories/branches.If you send a pull request from one GitHub repository/branch to another GitHub repository/branch, you ask their maintainers to pull your changes into their GitHub repository/branch. (you more or less ask them to issue  a git pull to your GitHub repository).As a side note, if you're new to Git, I'd suggest using git fetch and then git merge instead of git pull. git pull is effectively git fetch followed by git merge, but doing them 
+separately gives you better control over potential conflicts.
 
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
