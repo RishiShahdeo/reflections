@@ -18,6 +18,6 @@ separately gives you better control over potential conflicts.)
 
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
-Fork ----> Copy a repository on github to a your account on Github
+Fork ----> Copy a repository on Github to a your account on Github
 Clone ----> copy a repository from Github to your git (local machine)
-Branch ----> On the git repository(local machine) create a braanch to work on a new feature without altering the master branch(production code)
+Branch ----> On the git repository(local machine) create a branch to work on a new feature without altering the master branch(production code)
