@@ -33,27 +33,26 @@ ________________________________________________________________________________
 
 1.Imagine a scenario where caroline has created a branch called diff-oil. In this branch she uses 1/2 cup canola oil instead of 1/2 cup vegatable oil.She creates a pull request
   to merge this change to master branch in the GitHub repository. 
-2.In the meantime sarah creates a more-oil branch in the GitHub repository. She modifies the same file and the same line which caroline did in step 1.Sarah increases the quatity
+2.In the meantime sarah creates a more-oil branch in the GitHub repository. She modifies the same file and the same line which caroline did in step 1.Sarah increases the quantity
   of oil from 1/2 cup tp 3/4 cup.Sarah creates a pull request to merge her changes to the master branch on GitHub repository. 
 3. Say caroline first merges sarah's pull request by pushing the "Merge Pull Request" on sarah's pull request. After this sarah's more-oil branch can be deleted from GitHub.
-   Now sarah's chages are merged to the master branch on GitHub.
+   Now sarah's changes are merged to the master branch on GitHub.
 4. Now caroline's Pull Request  is trying to change the same line of the same file which sarah changed in the previous step, GitHub will show a merge conflict in Caroline's pull request.
 5. Because we can't resolve merge conflict on GitHub browser,So caroline must fetch sarah changes to her local machine repository by issuing the command:-
    $ git pull origin master
-6. Now sarah's changes are present in he master branch of caroline's local repositiry in git.
+6. Now sarah's changes are present in the master branch of caroline's local repository in git.
 7. Now caroline must merge these changes(master branch) into the diff-oil branch locally.caroline will give the command
    $ git checkout diff-oil
    $ git merge master diff-oil
 Now it will show a merge conflict in chilli.txt as expected.
    $ subl chilli.txt
-Here resolve the merge conflict by keeping both saah's and caroline's changes. That is adding the line "3/4 cup Canola oil" and removing the conflicting lines.
+Here resolve the merge conflict by keeping both sarah's and caroline's changes. That is adding the line "3/4 cup Canola oil" and removing the conflicting lines.
    $ git commit
    $ git log
-In the diff-oil branch this will show the merge commit just made in above step.
+In the diff-oil branch  the merge commit just made in above step will be shown.
 8. caroline will push her diff-oil branch to her fork by issuing :- 
    $ git push  origin diff-oil
-9. Pushing the diff-oil branch updates the Pull request on GitHub.Caroline can check her pull request on GitHub & it will be updated and will show "Merge Pull Request" Button.
-   since merge conflict has been resolved.
+9. Pushing the diff-oil branch updates caroline's Pull request on GitHub.Caroline can check her pull request on GitHub & it will be updated and will show "Merge Pull Request" Button, since merge conflict has been resolved.
 10.Caroline  will leave a comment for sarah to take a look on the changes visible on her Pull request.(Note these changes are in the diff-oil branch on GitHub & not on master branch of GitHub)
 11.Now sarah will see the comment and check if evry thing in the update is okay in caroline's Pull request. Then she will press the "Merge Pull Request" Button which was also visible in step 9
    This will merge the diff-oil branch on caroline's GitHub fork to master branch on caroline's Github fork. 
